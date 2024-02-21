@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="check_odometry" type="CMU_PID.py" name="CMU_PID_CONTROL" output="screen"/>
+</launch>
