@@ -10,11 +10,11 @@ This project is an implementation of Carnegie Mellon’s 24-677 (Modern Control 
 Since this was a class project, I have removed potential answers. If you would like the full code, please send me an email (will.kraus9@gmail.com).
 
 ## ROS: Basic Resources
-For this project, I used Oracle VMWare to simulate a Linux environment instead of dual booting my comptuer. You can find a tutorial about installing ROS using VMWare here: https://www.instructables.com/How-to-Install-ROS/ 
+For this project, I used Oracle VMWare to simulate a Linux environment instead of dual booting my computer. You can find a tutorial about installing ROS using VMWare here: https://www.instructables.com/How-to-Install-ROS/ 
 
-NB: I had an issue with using the sudo command when installing Linux in this way, solved with this tutorial: https://www.baeldung.com/linux/username-not-in-sudoers-file
+NB: I had an issue with using the sudo command when installing Linux in this way, and I solved the problem with this tutorial: https://www.baeldung.com/linux/username-not-in-sudoers-file
 
-Here's a great ROS introduction from Udemy (make sure to get the 7 day free trial): https://www.udemy.com/course/ros-for-beginners/
+Here's a great ROS introduction from Udemy (make sure to get the 7 day free trial!): https://www.udemy.com/course/ros-for-beginners/
 
 ## Gazebo
 I used the Clearpath Jackal as my model for the Gazebo simulation; install directions can be found here: https://www.clearpathrobotics.com/assets/guides/noetic/jackal/simulation.html
