@@ -22,4 +22,7 @@ I used the Clearpath Jackal as my model for the Gazebo simulation; install direc
 NB: The starter world has too many obstacles, so you can use the empty_world.launch file instead: https://www.clearpathrobotics.com/assets/guides/kinetic/jackal/additional_sim_worlds.html
 
 ## Test Files
-The .launch file called check_odometry runs the experiment; there is a odometry checking Python file also listed that I used to ensure I was calling the correct topics. Also, I made a Python file to make sure that the controller was taking in the correct data about the simulation.
+CMU_PID.py is the test file for a PID controller operating in Gazebo. For future use, any controller should work in this context, as long as the data collection from the simulation matches with the controller. 
+
+The .launch file called check_odometry runs the experiment; there is a odometry checking Python file also listed (check_odom.py) that I used to ensure I was calling the correct topics. 
+The file CMU_test.py is a test file for taking in the correct data about the simulation and has no controller.
