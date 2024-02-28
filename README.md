@@ -7,7 +7,7 @@ Converting an autonomous vehicle controller in Webots into ROS
 
 This project is an implementation of Carnegie Mellon’s 24-677 (Modern Control Theory) from Webots simulation to ROS Noetic and Gazebo. An autonomous vehicle navigates a racetrack using waypoints from a .csv file. Not only was this a fun project to finish over winter break, but this also serves as a great introduction to ROS for interested students. 
 
-Since this was a class project, I have removed potential answers and left the ROS import shell. If you would like the full code, please send me an email (will.kraus9@gmail.com).
+Since this was a class project, I have removed potential answers. If you would like the full code, please send me an email (will.kraus9@gmail.com).
 
 ## ROS: Basic Resources
 For this project, I used Oracle VMWare to simulate a Linux environment instead of dual booting my comptuer. You can find a tutorial about installing ROS using VMWare here: https://www.instructables.com/How-to-Install-ROS/ 
