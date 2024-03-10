@@ -83,9 +83,10 @@ class CMU_PID():
         # Export delta and F values to cmd_vel geometry_msg/Twist
         heading = Twist()
         print("Delta: ",delta)
+        # reduce F to be between 0 and 1 due to simulation environment / model
+        F = max(0, F*(0.001))
+
         print("F: ", F)
-        # clamp F to be between 0 and 1 due to simulation environment / model
-        F = max(0, F*(0.01))
         print("============")
 
         # NB: 0.25 in gazebo = pi/2 in radians
