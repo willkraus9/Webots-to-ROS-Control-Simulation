@@ -51,6 +51,8 @@ class CMU_PID():
         # PID control variables
         self.error_ki = 0
         self.last_error_kp = 0
+        self.error_ki_F = 0
+        self.last_error_kp_F = 0
         
         # Odometry variables
         self.X_gps = 0
@@ -77,10 +79,13 @@ class CMU_PID():
         #TODO: get the node that the vehicle tracks from the .csv file using built-in functions 
             #you will have to change the path that buggyTrace.csv is stored
 
-        # TODO: make a PID controller for the target psi value using the odometry topic from ROS
+        # TODO: make a PID controller for the target psi value and F value using the odometry topic from ROS
         # Export delta and F values to cmd_vel geometry_msg/Twist
         heading = Twist()
         print("Delta: ",delta)
+        print("F: ", F)
+        # clamp F to be between 0 and 1 due to simulation environment / model
+        F = max(0, F*(0.01))
         print("============")
 
         # NB: 0.25 in gazebo = pi/2 in radians
@@ -113,7 +118,7 @@ class CMU_PID():
         print("============")
         
         if abs(psi_gps*2*np.pi - delta) <= 0.1:
-            heading.linear.x = 0.25
+            heading.linear.x = F
             rospy.sleep(0.25)
             print("FORWARD")
         else:
